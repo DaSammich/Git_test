@@ -1,11 +1,44 @@
-<h2>Let's write a test</h2>
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
 
-here is a change
+function sortAnimal(animal) {
+  // return animal == null || animal == '' ? animal  :
+  //    animal.slice().sort((a, b) => a.numberOfLegs === b.numberOfLegs ?
+  //       a.name.localeCompare(b.name)  :
+  //       a.numberOfLegs - b.numberOfLegs
+  //   );
+  console.log(animal.slice().sort((a,b) => a.numberOfLegs === b.numberOfLegs))
+}
+
+var animal = [
+  { name: "Cat", numberOfLegs: 4 }, 
+  { name: "Snake", numberOfLegs: 0 }, 
+  { name: "Dog", numberOfLegs: 4 },
+  { name: "Pig", numberOfLegs: 4 },
+  { name: "Human", numberOfLegs: 2 },
+  { name: "Bird", numberOfLegs: 2 }];
+
+window.onload = function() {
+	sortAnimal(animal)
+}
+
+</script>
+</head>
+<body>
+
+  <h2>Let's write a test</h2>
+
+  here is a change
 
 
-Another change from desktop 2
+  Another change from desktop 2
 
-A change from laptop
+  A change from laptop
 
-a change from laptop
-a Change from desktop
+  a change from laptop
+  a Change from desktop  
+
+</body>
+</html>
