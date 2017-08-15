@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>debug</title>
+<script type="text/javascript">
+
+list = [1,5,60,3,5,5,5,8,4,6,23,3,5,67,8,9]
+     
+function quick_sort(array) {
+	pivot = array[0]
+	ind = 0
+	for (i in array) {
+		if (array[i] < pivot) {
+			temp = pivot[ind]
+			pivot[ind] = array[i]
+			array[i] = temp
+			ind++
+			pivot = pivot[i]
+		}
+	}
+	console.log(pivot)
+	console.log(ind)	
+	return array
+}
+
+window.onload = function() {
+	console.log(quick_sort(list))
+}		
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
